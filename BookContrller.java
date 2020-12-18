@@ -4,5 +4,10 @@ package com.zking.ssm.controller
 public class BookContorller{
   @Autowlred
   private IBookSerice bookSerice;
+
+  @RequestMapping("/toBookAdd")
+  public String toBookAdd(){
+	  return "book/addBook";
+  }
   ...
  }
